@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+    <form method="post">
+        <h4>用户名<input type="text" name="account"></h4>
+        <h4>密  码<input type="text" name="password"></h4>
+        {{ msg }}
+
+        <a href={{ url_for("log") }}>
+            <button type="submit">log</button>
+        </a>
+    </form>
+</body>
+</html>

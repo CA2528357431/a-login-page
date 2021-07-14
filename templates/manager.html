@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>manager</title>
+</head>
+<body>
+    <h1>LET'S MANAGE</h1>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>用户名</td>
+            <td>密码</td>
+            <td>操作</td>
+        </tr>
+        {% for x in user %}
+
+        <tr>
+            <td>{{ x["id"] }}</td>
+            <td>{{ x["ac"] }}</td>
+            <td>{{ x["pw"] }}</td>
+            <td><a href="/managedo?id={{ x["id"] }}">操作</a> </td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

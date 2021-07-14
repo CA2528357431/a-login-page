@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DO</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>用户名</td>
+            <td>密码</td>
+        </tr>
+
+        <tr>
+            <td>{{ detail["id"] }}</td>
+            <td>{{ detail["ac"] }}</td>
+            <td>{{ detail["pw"] }}</td>
+
+        </tr>
+
+    </table>
+    <form method="post">
+        <h4>修改用户名<input type="text" name="account"></h4>
+        <h4>修改密码<input type="text" name="password"></h4>
+        <button  type="submit">修改</button><br>
+        <a><h4>{{ msg }}</h4></a>
+    </form>
+
+</body>
+</html>

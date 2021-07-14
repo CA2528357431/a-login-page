@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log</title>
+    <a>hello,welcome to my web</a><br>
+    <a>have a nice day</a><br>
+
+
+
+</head>
+<body>
+    <h1>L I N</h1>
+    <form method="get">
+
+        <a href={{ url_for("login") }}>
+            <button type="button"><h6>in </h6></button>
+        </a>
+
+        <a href={{ url_for("logout") }}>
+            <button type="button"><h6>out</h6></button>
+        </a>
+
+
+    </form>
+
+
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td>{{ data.index(x)}}</td>
+            <td>{{ x }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

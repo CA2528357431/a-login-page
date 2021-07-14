@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <a>hello,welcome to my web</a><br>
+    <a>have a nice day</a><br>
+
+
+
+</head>
+<body>
+    <h1>L I N</h1>
+    <form method="post">
+        <label>用户名</label><input type="text" name="account" ><br>
+        <label>密  码</label><input type="password" name="password" ><br>
+        {{ msg }}
+        <br>
+
+        <button type="submit" >log</button>
+        <br>
+
+    </form>
+    <form method="get">
+        <a href={{ url_for("register") }}>
+            <button type="button">register</button>
+        </a>
+    </form>
+
+
+
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td>{{ data.index(x)}}</td>
+            <td>{{ x }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
